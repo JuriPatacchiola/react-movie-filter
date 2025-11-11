@@ -23,6 +23,7 @@ function App() {
     }
   }, [selectedGenre]);
 
+  const genres = ["", ...new Set(moviesData.map((movie) => movie.genre))];
   return (
     <>
 
