@@ -37,7 +37,13 @@ function App() {
           id="genre-select"
           value={selectedGenre}
           onChange={(e) => setSelectedGenre(e.target.value)}
-        ></select>
+        >
+          {genres.map((genre, index) => (
+            <option key={index} value={genre}>
+              {genre === "" ? "Tutti" : genre}
+            </option>
+          ))}
+        </select>
       </div>
     </>
   )
