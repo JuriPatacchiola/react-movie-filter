@@ -44,7 +44,19 @@ function App() {
             </option>
           ))}
         </select>
+
+        <ul className="movie-list">
+          {filteredMovies.map((movie, index) => (
+            <li key={index} className="movie-item">
+              <span className="movie-title">{movie.title}</span>
+              <span className="movie-genre">{movie.genre}</span>
+            </li>
+          ))}
+        </ul>
       </div>
+
+
+
     </>
   )
 }
