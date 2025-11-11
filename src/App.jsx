@@ -28,7 +28,11 @@ function App() {
     <>
       <div className="app-container">
 
+        <h1 className="title">Lista Film</h1>
 
+        <div className="filter-container">
+          <label htmlFor="genre-select">Filtra per genere:</label>
+        </div>
       </div>
     </>
   )
