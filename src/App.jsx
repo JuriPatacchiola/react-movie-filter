@@ -33,6 +33,11 @@ function App() {
         <div className="filter-container">
           <label htmlFor="genre-select">Filtra per genere:</label>
         </div>
+        <select
+          id="genre-select"
+          value={selectedGenre}
+          onChange={(e) => setSelectedGenre(e.target.value)}
+        ></select>
       </div>
     </>
   )
