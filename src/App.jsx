@@ -26,7 +26,10 @@ function App() {
   const genres = ["", ...new Set(moviesData.map((movie) => movie.genre))];
   return (
     <>
+      <div className="app-container">
 
+
+      </div>
     </>
   )
 }
